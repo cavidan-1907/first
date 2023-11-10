@@ -20,14 +20,31 @@ header {
                 gap: 5px;
             }
         }
-.griditem1{
-    width: 100%;
-    .griditem{
-        width: 25%;
-        background-color: red;
+
+        .bottom {
+            display: grid;
+            width: 100%;
+            height: 500px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            .grid-item1 {
+                background-color: red;
+            }
+        }
     }
 }
-   
-                }
-            }
-        
+
+@media screen and (max-width: 791px) {
+   .header{ .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        // grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .grid-item1{
+            background-color: aquamarine;
+        }
+    }
+}
+}
