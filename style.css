@@ -231,31 +231,6 @@
     display: inline;
   }
 }
-header {
-  width: 100%;
-}
-header .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 60px;
-}
-header .header .top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-header .header .top .p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-header .header .griditem1 {
-  width: 100%;
-}
-
 .container {
   max-width: 1500px;
   width: 100%;
@@ -441,4 +416,32 @@ section .right .grid p i {
     display: flex;
     flex-direction: column;
   }
+}
+header {
+  width: 100%;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+header .header .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .header .top .p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .header .griditem1 {
+  width: 100%;
+}
+header .header .griditem1 .griditem {
+  width: 25%;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
