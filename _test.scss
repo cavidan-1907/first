@@ -1,0 +1,117 @@
+section {
+    width: 100%;
+    padding: 50px 0;
+
+    .section-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+i{
+    color: orangered;
+}
+.point-1{
+    display: flex;
+    gap: 10px;
+
+}
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            .h1{
+                width: 100%;
+                h1{
+                    font-size: 40px;
+                }
+            }
+
+            .p {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            width: 100%;
+            .image,.image2,.image3{
+                background-color: rgb(250, 243, 237);
+                padding: 40px;
+                position: relative;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 100%;
+                .h4{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 20px;
+                    width: 100%;
+
+            }
+            .text2{
+                p{
+                    font-size: 15px;
+                    line-height: 1.7em;
+                }
+            }
+        }
+        }
+    }
+}
+@media screen  and (max-width:991px) {
+    section{
+        .section-3{
+            .top{
+                .h1{
+                width: 100%;}
+            }
+            .bottom{
+                .image3{
+                    display: none;
+                }
+                .image,.image2{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+@media screen  and (max-width:576px) {
+    section{
+        .section-3{
+            .top{
+                .h1{
+                width: 100%;
+            text-align: center;}
+            }
+            .bottom{
+                .image3,.image2{
+                    display: none;
+                }
+                .image{
+                    width: 100%;
+                    .h4{
+                        .text1{
+                        width: 100%;
+                    }
+                }
+                    .text2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

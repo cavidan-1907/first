@@ -1,0 +1,55 @@
+.section2{
+    padding: 100px 0px;
+    background-color: rgb(250, 234, 218);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .container{
+        .section21{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                .h1{
+                    width: 100%;
+                    h1{
+                        font-size: 40px;
+                    }
+                }
+    
+                .p {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+            .bottom{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .top1{
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    width: 100%;
+
+                    .right{
+                        display: flex;
+                        background-color: aqua;
+                        width: 100%;
+                    }
+                }
+            }
+
+       
+        }
+    }
+}

@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    padding: 50px 0;
 
     .header {
         display: flex;
@@ -13,6 +14,14 @@ header {
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            gap: 10px;
+            .h1{
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 40px;
+                }
+            }
 
             .p {
                 display: flex;
@@ -22,98 +31,11 @@ header {
         }
     }
 }
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    .right1{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        gap: 30px;
-                        padding: 50px;
-                        transition: all 0.5s ;
-                        border: 1px solid  rgb(248, 235, 210);
-                       &:hover{
-                        background-color: rgb(248, 235, 210);
-                       }
-                       .img{
-                        img{
-                            width: 55px;
-                            height: 55px;
-                        }
-                       }
-                       .text1{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-                        line-height: 1.2em;
-                        width: 100%;
-                        h3{
-                            font-weight: 900;
-            
-                        }
-                        p{
-                            font-weight: 100;
-                            color: gray;
-                        }
-                       }
-
-    }
-}
-@media screen and (max-width:991px){
-    header{
-        .container{
-            .header{
-                .grid{
-                    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    .right1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        padding: 50px 30px;
-        transition: all 0.5s ;
-        border: 1px solid  rgb(248, 235, 210);
-       &:hover{
-        background-color: rgb(248, 235, 210);
-       }
-       .img{
-        img{
-            width: 55px;
-            height: 55px;
-        }
-       }
-       .text1{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        line-height: 1.2em;
-        width: 100%;
-       }
-                }
-            }
-        }
-    }
-}
-}
-
-
-@media screen and (max-width:576px){
-    header{
-        .container{
-            .header{
-                .grid{
-                    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 30px;
-    .right1{
+    .right1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -121,29 +43,104 @@ header {
         text-align: center;
         gap: 30px;
         padding: 50px;
-        transition: all 0.5s ;
-        border: 1px solid  rgb(248, 235, 210);
-        width: 100%;
-       &:hover{
-        background-color: rgb(248, 235, 210);
-       }
-       .img{
-        img{
-            width: 55px;
-            height: 55px;
+        transition: all 0.5s;
+        border: 1px solid rgb(248, 235, 210);
+        &:hover {
+            background-color: rgb(248, 235, 210);
         }
-       }
-       .text1{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        line-height: 1.2em;
-        width: 100%;
-       }
+        .img {
+            img {
+                width: 55px;
+                height: 55px;
+            }
+        }
+        .text1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            line-height: 1.7em;
+            width:100%;
+            h3 {
+                font-weight: 900;
+            }
+            p {
+                font-size: 16px;
+                color: gray;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    header {
+        .container {
+            .header {
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30px;
+                    .right1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        gap: 30px;
+                        padding: 50px 30px;
+                        transition: all 0.5s;
+                        border: 1px solid rgb(248, 235, 210);
+                        &:hover {
+                            background-color: rgb(248, 235, 210);
+                        }
+                        .img {
+                            img {
+                                width: 55px;
+                                height: 55px;
+                            }
+                        }
+                        .text1 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            line-height: 1.7em;
+                            width: 274px;
+                            height: 81px;
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    header {
+        .container {
+            .header {
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 30px;
+                    .right1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        gap: 30px;
+                        padding: 50px;
+                        transition: all 0.5s;
+                        border: 1px solid rgb(248, 235, 210);
+                        width: 100%;
+                        &:hover {
+                            background-color: rgb(248, 235, 210);
+                        }
+              
+                    }
+                }
+            }
+        }
+    }
 }
