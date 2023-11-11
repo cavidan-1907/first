@@ -1,55 +1,201 @@
 .section2{
-    padding: 100px 0px;
-    background-color: rgb(250, 234, 218);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    .container{
-        .section21{
+    .container {
+        background-color: #cfb4a13a;
+
+        .section21 {
+            padding: 100px 0px;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            gap: 20px;
-            .top {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                gap: 10px;
+            align-items: center;
+            gap: 10px;
+            h2 {
+                font-size: 40px;
                 text-align: center;
-                .h1{
-                    width: 100%;
-                    h1{
-                        font-size: 40px;
-                    }
-                }
-    
-                .p {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                }
             }
-            .bottom{
-                width: 100%;
+
+            .cards {
+                margin-top: 40px;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .top1{
+                align-items: flex-end;
+                gap: 30px;
+                border-left: 1px solid black;
+                position: relative;
+                .education{
                     display: flex;
                     align-items: center;
-                    justify-content:space-between;
-                    width: 100%;
+                    gap: 10px;
+                    position: absolute;
+                    top: 15%;
+                    left: -10px;
+                    i{
+                        color: #FF6B00;
+                        font-size: 20px;
+                    }
+                    h5{
+                        font-size: 30px;
+                    }
+                }
+                .software{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: absolute;
+                    top: 50%;
+                    left: -10px;
+                    i{
+                        color: #FF6B00;
+                        font-size: 20px;
+                    }
+                    h5{
+                        font-size: 30px;
+                        width: 100px;
+                    }
+                }
+                .experience{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: absolute;
+                    top: 85%;
+                    left: -10px;
+                    i{
+                        color: #FF6B00;
+                        font-size: 20px;
+                    }
+                    h5{
+                        font-size: 30px;
+                    }
+                }
+                .resume-cards {
+                    width: 80%;
+                    padding: 30px;
+                    background-color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 10px;
 
-                    .right{
+                    div {
+                        width: 30%;
+                        padding-right: 50px;
                         display: flex;
-                        background-color: aqua;
-                        width: 100%;
+                        flex-direction: column;
+                        gap: 30px;
+                        border-right: 1px solid rgba(0, 0, 0, 0.267);
+
+                        h4 {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            opacity: .7;
+                        }
                     }
                 }
             }
 
-       
+            .statistik {
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    .percentage {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            width: 100px;
+                            height: 1px;
+                            background-color: rgb(178, 221, 238);
+                            position: absolute;
+                            left: -103px;
+                            top: 50%;
+                        }
+                    }
+                }
+            }
         }
     }
+}
+@media screen and (max-width:991px) {
+    .section2{
+        .container{
+            .section21{
+                h2{
+                    text-align: center;
+                    width: 50%;
+                }
+                .cards{
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    border-left: none;
+                    align-items: center;
+                    .education, .software, .experience{
+                        display: none;
+                    }
+                    .resume-cards{
+                        margin: 0px;
+                        width: 100%;
+                        flex-direction: column;
+                        gap: 30px;
+                        div{
+                            width: 100%;
+                            border-right: none;
+                        }
+                    }
+                }
+                .statistik{
+                    p{
+                        .percentage{
+                            &::before{
+                                width: 300px;
+                                left: -310px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:991px){
+    .resume{
+        .container{
+            .in-resume{
+                h2{
+                    font-size: 30px;
+                    width: 100%;
+                }
+                .cards{
+                    width: 100%;
+                    border-left: none;
+                    align-items: center;
+                    .education, .software, .experience{
+                        display: none;
+                    }
+                    .resume-cards{
+                        flex-direction: column;
+                        gap: 30px;
+                        div{
+                            width: 100%;
+                            border-right: none;
+                        }
+                    }
+                }
+                .statistik{
+                    p{
+                        .percentage{
+                            &::before{
+                                width: 200px;
+                                left: -210px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

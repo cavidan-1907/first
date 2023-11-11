@@ -242,24 +242,15 @@ section .section-1 {
 section .section-1 .left {
   width: 50%;
   height: auto;
-  position: relative;
-}
-section .section-1 .left::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-}
-section .section-1 .left::after:hover::after {
-  opacity: 1;
+  background-color: black;
 }
 section .section-1 .left img {
   width: 100%;
   height: auto;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
+}
+section .section-1 .left img:hover {
+  opacity: 0.5;
 }
 section .right {
   width: 48%;
@@ -534,56 +525,170 @@ header .header .top .p {
     background-color: rgb(248, 235, 210);
   }
 }
-.section2 {
-  padding: 100px 0px;
-  background-color: rgb(250, 234, 218);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section2 .container {
+  background-color: rgba(207, 180, 161, 0.2274509804);
 }
 .section2 .container .section21 {
+  padding: 100px 0px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
-}
-.section2 .container .section21 .top {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 10px;
+}
+.section2 .container .section21 h2 {
+  font-size: 40px;
   text-align: center;
 }
-.section2 .container .section21 .top .h1 {
-  width: 100%;
-}
-.section2 .container .section21 .top .h1 h1 {
-  font-size: 40px;
-}
-.section2 .container .section21 .top .p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.section2 .container .section21 .bottom {
-  width: 100%;
+.section2 .container .section21 .cards {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  border-left: 1px solid black;
+  position: relative;
 }
-.section2 .container .section21 .bottom .top1 {
+.section2 .container .section21 .cards .education {
   display: flex;
   align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 15%;
+  left: -10px;
+}
+.section2 .container .section21 .cards .education i {
+  color: #FF6B00;
+  font-size: 20px;
+}
+.section2 .container .section21 .cards .education h5 {
+  font-size: 30px;
+}
+.section2 .container .section21 .cards .software {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+}
+.section2 .container .section21 .cards .software i {
+  color: #FF6B00;
+  font-size: 20px;
+}
+.section2 .container .section21 .cards .software h5 {
+  font-size: 30px;
+  width: 100px;
+}
+.section2 .container .section21 .cards .experience {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 85%;
+  left: -10px;
+}
+.section2 .container .section21 .cards .experience i {
+  color: #FF6B00;
+  font-size: 20px;
+}
+.section2 .container .section21 .cards .experience h5 {
+  font-size: 30px;
+}
+.section2 .container .section21 .cards .resume-cards {
+  width: 80%;
+  padding: 30px;
+  background-color: white;
+  display: flex;
   justify-content: space-between;
-  width: 100%;
+  border-radius: 10px;
 }
-.section2 .container .section21 .bottom .top1 .right {
+.section2 .container .section21 .cards .resume-cards div {
+  width: 30%;
+  padding-right: 50px;
   display: flex;
-  background-color: aqua;
-  width: 100%;
+  flex-direction: column;
+  gap: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.267);
+}
+.section2 .container .section21 .cards .resume-cards div h4 {
+  font-size: 25px;
+}
+.section2 .container .section21 .cards .resume-cards div p {
+  opacity: 0.7;
+}
+.section2 .container .section21 .statistik p {
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .container .section21 .statistik p .percentage {
+  position: relative;
+}
+.section2 .container .section21 .statistik p .percentage::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgb(178, 221, 238);
+  position: absolute;
+  left: -103px;
+  top: 50%;
 }
 
+@media screen and (max-width: 991px) {
+  .section2 .container .section21 h2 {
+    text-align: center;
+    width: 50%;
+  }
+  .section2 .container .section21 .cards {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-left: none;
+    align-items: center;
+  }
+  .section2 .container .section21 .cards .education, .section2 .container .section21 .cards .software, .section2 .container .section21 .cards .experience {
+    display: none;
+  }
+  .section2 .container .section21 .cards .resume-cards {
+    margin: 0px;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section2 .container .section21 .cards .resume-cards div {
+    width: 100%;
+    border-right: none;
+  }
+  .section2 .container .section21 .statistik p .percentage::before {
+    width: 300px;
+    left: -310px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .resume .container .in-resume h2 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .resume .container .in-resume .cards {
+    width: 100%;
+    border-left: none;
+    align-items: center;
+  }
+  .resume .container .in-resume .cards .education, .resume .container .in-resume .cards .software, .resume .container .in-resume .cards .experience {
+    display: none;
+  }
+  .resume .container .in-resume .cards .resume-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .resume .container .in-resume .cards .resume-cards div {
+    width: 100%;
+    border-right: none;
+  }
+  .resume .container .in-resume .statistik p .percentage::before {
+    width: 200px;
+    left: -210px;
+  }
+}
 section {
   width: 100%;
   padding: 50px 0;
@@ -732,6 +837,15 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
 .section5 .container .grid div {
   overflow: hidden;
   border-radius: 10px;
+  background-color: black;
+}
+.section5 .container .grid div img {
+  width: 100%;
+  height: auto;
+  transition: all 1s ease;
+}
+.section5 .container .grid div img:hover {
+  opacity: 0.5;
 }
 .section5 .container .grid .grid-item1 {
   grid-column: 1/2;
