@@ -1,0 +1,95 @@
+.section8 {
+    background-color: white;
+    .container {
+        .section81 {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 30px;
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 30px;
+                    text-align: center;
+                    p {
+                        font-size: 15px;
+                        transition: 0.5s ease;
+                        color: gray;
+
+                        &:hover {
+                            color: orange;
+                        }
+                    }
+                }
+            }
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .right {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 40px;
+                    
+                    .item{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        i{
+                            padding: 20px;
+                            font-size: 25px;
+                            border-radius: 10px;
+                            color: orangered;
+                            background-color: wheat;
+                        }
+
+                    }
+                }
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    width: 75%;
+                    gap: 20px;
+                    .input-list {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 20px;
+                        width: 75%;
+                        input {
+                            padding: 25px;
+                            font-size: 12px;
+                            border-radius: 5px;
+                            border: rgb(252, 215, 146) 0.2px solid;
+                        }
+                    }
+                    .text {
+                        width: 100%;
+                        textarea {
+                            border-radius: 5px;
+                            width: 75%;
+                            padding: 25px;
+                            font-size: 12px;
+                            resize: vertical;
+                            border: rgb(252, 215, 146) 0.2px solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

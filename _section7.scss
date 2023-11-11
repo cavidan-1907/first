@@ -168,7 +168,7 @@
                 
                     
                 }
-                @media screen and (max-width:741px) {
+                @media screen and (max-width:471px) {
 
                     .bottom{
                         display: flex;
@@ -184,3 +184,19 @@
                     
                         
                     }
+                    @media screen and (max-width:371px) {
+
+                        .bottom{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            .item{
+                                width: 100%;
+                                .image{
+                                    width:100% ;
+                                }
+                              }
+                        }
+                        
+                            
+                        }

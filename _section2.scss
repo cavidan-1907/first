@@ -1,6 +1,7 @@
 .section2{
+    background-color: #cfb4a13a;
     .container {
-        background-color: #cfb4a13a;
+    
 
         .section21 {
             padding: 100px 0px;
@@ -160,10 +161,12 @@
 
 
 
-@media screen and (max-width:991px){
-    .resume{
+@media screen and (max-width:551px){
+    .section2{
+    width: 100%;
         .container{
-            .in-resume{
+            width: 100%;
+            .section21{
                 h2{
                     font-size: 30px;
                     width: 100%;
