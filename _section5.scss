@@ -66,6 +66,7 @@
                         width: 100%;
                         height: auto;
                         transition: all 1s ease;
+                        object-fit: cover;
                         &:hover{
                             opacity: 0.5;
                         }
