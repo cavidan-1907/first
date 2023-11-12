@@ -1,5 +1,6 @@
 .section8 {
     background-color: white;
+    padding: 50px 0;
     .container {
         .section81 {
             display: flex;
@@ -11,6 +12,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                text-align: center;
                 gap: 30px;
                 .menu {
                     display: flex;
@@ -34,28 +36,35 @@
                 justify-content: space-between;
                 align-items: center;
                 .right {
-                    width: 25%;
+                    width: 20%;
                     height: 100%;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     flex-direction: column;
                     gap: 40px;
-                    
-                    .item{
+
+                    .item {
                         width: 100%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         gap: 20px;
-                        i{
+                        .text {
+                            h1 {
+                                font-size: 20px;
+                                display: flex;
+                                align-items: flex-start;
+                                flex-direction: column;
+                            }
+                        }
+                        i {
                             padding: 20px;
                             font-size: 25px;
                             border-radius: 10px;
                             color: orangered;
                             background-color: wheat;
                         }
-
                     }
                 }
                 .left {
@@ -63,13 +72,13 @@
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: center;
-                    width: 75%;
+                    width: 70%;
                     gap: 20px;
                     .input-list {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         gap: 20px;
-                        width: 75%;
+                        width: 80%;
                         input {
                             padding: 25px;
                             font-size: 12px;
@@ -81,12 +90,112 @@
                         width: 100%;
                         textarea {
                             border-radius: 5px;
-                            width: 75%;
+                            width: 80%;
                             padding: 25px;
                             font-size: 12px;
                             resize: vertical;
                             border: rgb(252, 215, 146) 0.2px solid;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .section8 {
+        width: 100%;
+        .container {
+            width: 100%;
+            .section81 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    gap: 20px;
+                    .left {
+                        width: 100%;
+                        .input-list {
+                            width: 100%;
+             
+                            input {
+                                width: 100%;
+                            }
+                        }
+                        .text{
+                            width: 100%;
+                            textarea{
+                                width: 100%;
+                            }
+                        }
+
+                    }
+                    .right {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .section8 {
+        width: 100%;
+        .container {
+            width: 100%;
+            .section81 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    gap: 20px;
+                    .left {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        .input-list {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            input {
+                                width: 100%;
+                            }
+                        }
+                        .text{
+                            width: 100%;
+                            textarea{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .right {
+                        width: 100%;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
                     }
                 }
             }
