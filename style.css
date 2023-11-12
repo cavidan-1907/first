@@ -901,7 +901,6 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
   }
 }
 .section5 {
-  padding: 100px 0px;
   background-color: white;
 }
 .section5 .container .top {
@@ -1920,5 +1919,38 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
   .section9 .container .section91 .item4 {
     grid-column: 1/2;
     grid-row: 3/4;
+  }
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: relative;
+  border-top: 1px solid white;
+  padding: 50px 0;
+}
+footer .container .footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 15px;
+}
+footer .container .footer .foot2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  footer {
+    width: 100%;
+  }
+  footer .container {
+    width: 100%;
+  }
+  footer .container .footer {
+    flex-direction: column;
+    gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
