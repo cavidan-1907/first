@@ -916,6 +916,7 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
   justify-content: space-between;
   gap: 30px;
   text-align: center;
+  flex-wrap: wrap;
 }
 .section5 .container .top .menu p {
   font-size: 15px;
@@ -1776,6 +1777,8 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
   gap: 50px;
   padding: 50px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .section9 .container .section91 .item1 {
   display: flex;
