@@ -339,6 +339,14 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
   }
 }
+@media screen and (max-width: 991px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
 section {
   width: 100%;
   padding: 80px 0;

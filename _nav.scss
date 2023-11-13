@@ -427,3 +427,14 @@ max-width: 100%;
         width: 100%;
     }
 }
+
+@media screen and (max-width:991px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        // overflow-x: hidden;
+    }
+    
+}
