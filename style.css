@@ -1399,8 +1399,7 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
     width: 100%;
   }
   .section6 .container .section61 .bottom .item6 img {
-    width: 100%;
-    height: 100%;
+    width: 30%;
     -o-object-fit: cover;
        object-fit: cover;
     transition: all 0.5s ease;
