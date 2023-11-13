@@ -8,17 +8,17 @@ header {
         justify-content: center;
         flex-direction: column;
         gap: 30px;
-
+        width: 100%;
         .top {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             gap: 10px;
-            .h1{
+            .h1 {
                 width: 100%;
                 text-align: center;
-                h1{
+                h1 {
                     font-size: 40px;
                 }
             }
@@ -35,6 +35,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    width: 100%;
     .right1 {
         display: flex;
         flex-direction: column;
@@ -59,7 +60,7 @@ header {
             flex-direction: column;
             gap: 10px;
             line-height: 1.7em;
-            width:100%;
+            width: 100%;
             h3 {
                 font-weight: 900;
             }
@@ -73,11 +74,12 @@ header {
 @media screen and (max-width: 991px) {
     header {
         .container {
+
             .header {
                 .grid {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 30px;
+                    width: 100%;
                     .right1 {
                         display: flex;
                         flex-direction: column;
@@ -102,8 +104,7 @@ header {
                             flex-direction: column;
                             gap: 10px;
                             line-height: 1.7em;
-                            width: 274px;
-                            height: 81px;
+                            width: 100%;
                             p {
                                 font-size: 15px;
                             }
@@ -122,7 +123,7 @@ header {
                 .grid {
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
-                    gap: 30px;
+     
                     .right1 {
                         display: flex;
                         flex-direction: column;
@@ -133,11 +134,10 @@ header {
                         padding: 50px;
                         transition: all 0.5s;
                         border: 1px solid rgb(248, 235, 210);
-                        width: 100%;
+                        // width: 100%;
                         &:hover {
                             background-color: rgb(248, 235, 210);
                         }
-              
                     }
                 }
             }

@@ -1,5 +1,7 @@
 .section2{
     background-color: #cfb4a13a;
+    width: 100%;
+
     .container {
     
 
@@ -118,8 +120,10 @@
 }
 @media screen and (max-width:991px) {
     .section2{
+        width: 100%;
         .container{
             .section21{
+                width: 100%;
                 h2{
                     text-align: center;
                     width: 50%;

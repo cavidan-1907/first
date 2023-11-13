@@ -519,6 +519,7 @@ header .header {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 header .header .top {
   display: flex;
@@ -544,6 +545,7 @@ header .header .top .p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  width: 100%;
 }
 .grid .right1 {
   display: flex;
@@ -582,7 +584,7 @@ header .header .top .p {
   header .container .header .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    width: 100%;
   }
   header .container .header .grid .right1 {
     display: flex;
@@ -607,8 +609,7 @@ header .header .top .p {
     flex-direction: column;
     gap: 10px;
     line-height: 1.7em;
-    width: 274px;
-    height: 81px;
+    width: 100%;
   }
   header .container .header .grid .right1 .text1 p {
     font-size: 15px;
@@ -618,7 +619,6 @@ header .header .top .p {
   header .container .header .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
   }
   header .container .header .grid .right1 {
     display: flex;
@@ -630,7 +630,6 @@ header .header .top .p {
     padding: 50px;
     transition: all 0.5s;
     border: 1px solid rgb(248, 235, 210);
-    width: 100%;
   }
   header .container .header .grid .right1:hover {
     background-color: rgb(248, 235, 210);
@@ -638,6 +637,7 @@ header .header .top .p {
 }
 .section2 {
   background-color: rgba(207, 180, 161, 0.2274509804);
+  width: 100%;
 }
 .section2 .container .section21 {
   padding: 100px 0px;
@@ -745,6 +745,12 @@ header .header .top .p {
 }
 
 @media screen and (max-width: 991px) {
+  .section2 {
+    width: 100%;
+  }
+  .section2 .container .section21 {
+    width: 100%;
+  }
   .section2 .container .section21 h2 {
     text-align: center;
     width: 50%;
@@ -864,7 +870,6 @@ section .section-3 .bottom .image .h4, section .section-3 .bottom .image2 .h4, s
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  width: 100%;
 }
 section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .text2 p, section .section-3 .bottom .image3 .text2 p {
   font-size: 15px;
@@ -872,14 +877,17 @@ section .section-3 .bottom .image .text2 p, section .section-3 .bottom .image2 .
 }
 
 @media screen and (max-width: 991px) {
-  section .section-3 .top .h1 {
+  section {
+    width: 100%;
+  }
+  section .section-3 {
     width: 100%;
   }
   section .section-3 .bottom .image3 {
     display: none;
   }
   section .section-3 .bottom .image, section .section-3 .bottom .image2 {
-    width: 100%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 576px) {

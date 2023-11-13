@@ -55,7 +55,7 @@ i{
                     align-items: center;
                     justify-content: flex-start;
                     gap: 20px;
-                    width: 100%;
+                  
 
             }
             .text2{
@@ -70,17 +70,15 @@ i{
 }
 @media screen  and (max-width:991px) {
     section{
+        width: 100%;
         .section-3{
-            .top{
-                .h1{
-                width: 100%;}
-            }
+           width: 100%;
             .bottom{
                 .image3{
                     display: none;
                 }
                 .image,.image2{
-                    width: 100%;
+                    width: 50%;
                 }
             }
         }
