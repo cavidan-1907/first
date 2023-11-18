@@ -51,6 +51,10 @@
                         align-items: center;
                         gap: 20px;
                         .text {
+                            width: 100%;
+                            display: flex;
+                            align-items: flex-start;
+                            flex-direction: column;
                             h1 {
                                 font-size: 20px;
                                 display: flex;
@@ -138,7 +142,7 @@
 
                     }
                     .right {
-                        width: 100%;
+
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
